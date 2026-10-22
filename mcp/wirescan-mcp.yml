@@ -1,0 +1,7 @@
+generated: '2026-10-21'
+method: derived
+source: https://www.wirescan.no
+deployment:
+  mode: none
+  auth: unknown
+  verified: derived

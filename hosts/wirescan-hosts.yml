@@ -1,0 +1,54 @@
+generated: '2026-10-21'
+method: derived
+source: the pre-flight dossier, apis.yml pointers, spec servers, well-known, vendors -- nothing fetched here
+generator: derive-hosts.py
+summary:
+  hosts: 3
+  own: 3
+  other_domain: 0
+  platform: 0
+  roles:
+  - api
+  - portal
+  - website
+hosts:
+- host: api.wirescan.no
+  found_by:
+  - contract-discovery
+  types: []
+  serves: []
+  registrable_domain: wirescan.no
+  role: api
+  relation: own
+- host: portal.wirescan.no
+  found_by:
+  - pointer
+  - probed
+  - site-links
+  - docs-index
+  - contract-discovery
+  - well-known
+  types:
+  - DeveloperPortal
+  serves:
+  - docs
+  registrable_domain: wirescan.no
+  role: portal
+  relation: own
+- host: www.wirescan.no
+  found_by:
+  - pointer
+  - probed
+  - contract-discovery
+  - well-known
+  - vendor-detect
+  types:
+  - Newsroom
+  - Blog
+  - Website
+  serves:
+  - hosting
+  vendor: squarespace
+  registrable_domain: wirescan.no
+  role: website
+  relation: own
